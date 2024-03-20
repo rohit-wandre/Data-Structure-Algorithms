@@ -1,0 +1,26 @@
+
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int n=153,s=0;
+    int temp=n;
+    while(temp>0)
+    {
+        int t=temp%10;
+        s=s+pow(t,3);
+        temp=/10;
+    }
+    if(n==s)
+    {
+        cout<<"Armstrong";
+    }
+    else
+    {
+        cout<<"Not Armstrong";
+    }
+    return 0;
+}
